@@ -1,0 +1,17 @@
+﻿using DataAccessLayer.Abstract;
+using EntityLayer.Concrete;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DataAccessLayer.Concrete.Repositories
+{
+    public class ContactRepository : Repository<Contact>,IContactDal
+    {
+        public ContactRepository(Context context) : base(context)
+        {
+        }
+    }
+}
