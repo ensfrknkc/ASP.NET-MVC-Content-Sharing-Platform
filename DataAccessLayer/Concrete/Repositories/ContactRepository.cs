@@ -10,8 +10,6 @@ namespace DataAccessLayer.Concrete.Repositories
 {
     public class ContactRepository : Repository<Contact>,IContactDal
     {
-        public ContactRepository(Context context) : base(context)
-        {
-        }
+        
     }
 }

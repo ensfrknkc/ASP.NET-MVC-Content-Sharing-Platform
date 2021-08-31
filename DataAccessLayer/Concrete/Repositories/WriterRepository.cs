@@ -10,8 +10,6 @@ namespace DataAccessLayer.Concrete.Repositories
 {
     public class WriterRepository : Repository<Writer>,IWriterDal
     {
-        public WriterRepository(Context context) : base(context)
-        {
-        }
+       
     }
 }

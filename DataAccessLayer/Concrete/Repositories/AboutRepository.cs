@@ -10,8 +10,6 @@ namespace DataAccessLayer.Concrete.Repositories
 {
     public class AboutRepository : Repository<About>, IAboutDal
     {
-        public AboutRepository(Context context) : base(context)
-        {
-        }
+    
     }
 }

@@ -10,8 +10,6 @@ namespace DataAccessLayer.Concrete.Repositories
 {
     public class HeadingRepository : Repository<Heading>,IHeadingDal
     {
-        public HeadingRepository(Context context) : base(context)
-        {
-        }
+       
     }
 }

@@ -11,25 +11,24 @@ namespace DataAccessLayer.Concrete.Repositories
 {
     public class Repository<T> : IRepository<T> where T : class
     {
-        private readonly Context _context;
-        private readonly DbSet<T> _object;
-
-        public Repository(Context context)
+        Context context = new Context();
+        DbSet<T> _object;
+        public Repository()
         {
-            _context = context;
-            _object = _context.Set<T>();
+            _object = context.Set<T>();
         }
+
 
         public void Delete(T p)
         {
             _object.Remove(p);
-            _context.SaveChanges();
+            context.SaveChanges();
         }
 
         public void Insert(T p)
         {
             _object.Add(p);
-            _context.SaveChanges();
+            context.SaveChanges();
         }
 
         public List<T> List()
@@ -44,7 +43,7 @@ namespace DataAccessLayer.Concrete.Repositories
 
         public void Update(T p)
         {
-            _context.SaveChanges();
+            context.SaveChanges();
         }
     }
 }

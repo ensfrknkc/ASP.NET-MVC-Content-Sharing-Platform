@@ -12,9 +12,7 @@ namespace DataAccessLayer.Concrete.Repositories
 {
     public class CategoryRepository : Repository<Category>, ICategoryDal
     {
-        public CategoryRepository(Context context) : base(context)
-        {
-        }
+       
     }
 }
 /*
