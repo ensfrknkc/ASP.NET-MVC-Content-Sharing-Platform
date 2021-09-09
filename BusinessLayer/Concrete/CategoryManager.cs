@@ -28,13 +28,6 @@ namespace BusinessLayer.Concrete
             _categoryDal.Delete(category);
         }
 
-        public int CategoryStatusDiffrance()
-        {
-            var trueCount = _categoryDal.List(x => x.CategoryStatus==true).Count();
-            var falseCount = _categoryDal.List(x => x.CategoryStatus == false).Count();
-            return Math.Abs(trueCount - falseCount);
-        }
-
         public void CategoryUpdate(Category category)
         {
             _categoryDal.Update(category);

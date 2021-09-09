@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Statistics";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<br />
+<h2 class="text-center">İstatistikler Sayfası</h2>
+<br />
+<br />
+<div">
+    <div class="row justify-content-sm-around">
+        <div class="card col-md-3 bg-primary" >
+            <div class="card-body text-center">
+                <h3 class="">Toplam Kategori Sayısı</h3>
+                <h1 class=""> @ViewBag.categoryCount</h1>
+            </div>
+        </div>
+        <div class="card col-md-3 bg-danger">
+            <div class="card-body text-center">
+                <h3>Yazılım Kategorili Başlık Sayısı</h3>
+                <h1> @ViewBag.categoryCaountForSoftware</h1>
+            </div>
+        </div>
+        <div class="card col-md-3 bg-success" style="">
+            <div class="card-body text-center">
+                <h3>"A" Harfi İçeren Yazar Adı Sayısı</h3>
+                <h1> @ViewBag.writersIncludeChar</h1>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="row justify-content-sm-around">
+        <div class="card col-md-3 bg-info" >
+            <div class="card-body text-center">
+                <h3>En Fazla Başlığa Sahip Kategori</h3>
+                <h1> " @ViewBag.categoryCountWithMostTitles"</h1>
+            </div>
+        </div>
+        <div class="card col-md-3 bg-warning" >
+            <div class="card-body text-center">
+                <h3>Aktif Olan Ve Olmayan Kategori Farkı</h3>
+                <h1>@ViewBag.categoryStatusDiffrance</h1>
+            </div>
+        </div>
+    </div>
+</div">
