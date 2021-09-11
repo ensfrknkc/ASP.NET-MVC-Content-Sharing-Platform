@@ -15,5 +15,5 @@
 - All management, change and add-interest operations can be performed for the site.
 
 ## Related Images
-- Will be added very soon
+- ![statisticsPage](./istatistikview/statistics.PNG)
 
