@@ -9,6 +9,5 @@ namespace BusinessLayer.Abstract
 {
     public interface IHeadingService
     {
-        List<Heading> GetListByCategoryId(int id);
     }
 }
