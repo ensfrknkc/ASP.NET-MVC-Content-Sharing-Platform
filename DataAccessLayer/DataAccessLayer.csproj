@@ -59,13 +59,7 @@
     <Compile Include="Abstract\IRepository.cs" />
     <Compile Include="Abstract\IWriterDal.cs" />
     <Compile Include="Concrete\Context.cs" />
-    <Compile Include="Concrete\Repositories\AboutRepository.cs" />
-    <Compile Include="Concrete\Repositories\CategoryRepository.cs" />
-    <Compile Include="Concrete\Repositories\ContactRepository.cs" />
-    <Compile Include="Concrete\Repositories\ContentRepository.cs" />
-    <Compile Include="Concrete\Repositories\HeadingRepository.cs" />
     <Compile Include="Concrete\Repositories\Repository.cs" />
-    <Compile Include="Concrete\Repositories\WriterRepository.cs" />
     <Compile Include="EntityFramework\EfAboutDal.cs" />
     <Compile Include="EntityFramework\EfCategoryDal.cs" />
     <Compile Include="EntityFramework\EfContactDal.cs" />
