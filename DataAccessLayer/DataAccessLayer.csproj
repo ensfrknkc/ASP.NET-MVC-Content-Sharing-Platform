@@ -86,6 +86,14 @@
     <Compile Include="Migrations\202109190927567_mig_writerstatus.designer.cs">
       <DependentUpon>202109190927567_mig_writerstatus.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202110121904438_mig_contentstatusAdd.cs" />
+    <Compile Include="Migrations\202110121904438_mig_contentstatusAdd.designer.cs">
+      <DependentUpon>202110121904438_mig_contentstatusAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202110121909263_mig_headingstatusAdd.cs" />
+    <Compile Include="Migrations\202110121909263_mig_headingstatusAdd.designer.cs">
+      <DependentUpon>202110121909263_mig_headingstatusAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -114,6 +122,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202109190927567_mig_writerstatus.resx">
       <DependentUpon>202109190927567_mig_writerstatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110121904438_mig_contentstatusAdd.resx">
+      <DependentUpon>202110121904438_mig_contentstatusAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202110121909263_mig_headingstatusAdd.resx">
+      <DependentUpon>202110121909263_mig_headingstatusAdd.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup />
