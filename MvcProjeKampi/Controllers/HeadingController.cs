@@ -72,6 +72,7 @@ namespace MvcProjeKampi.Controllers
         public ActionResult DeleteHeading(int id)
         {
             var HeadingValue = hm.GetByID(id);
+            HeadingValue.HeadingStatus = false;
             hm.HeadingDelete(HeadingValue);
             return RedirectToAction("Index");
         }
@@ -79,6 +80,7 @@ namespace MvcProjeKampi.Controllers
         public ActionResult ActiveHeading(int id)
         {
             var HeadingValue = hm.GetByID(id);
+            HeadingValue.HeadingStatus = true;
             hm.HeadingActivate(HeadingValue);
             return RedirectToAction("Index");
         }
